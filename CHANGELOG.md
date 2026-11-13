@@ -4,6 +4,10 @@ Technical changes, newest first. What a user sees of a version goes to `release-
 
 ## Unreleased
 
+No change.
+
+## 0.2.1 - 2026-11-13
+
 - The repository moves to the organization `polaris-works` as `wardrobe`: GitHub Pages serves it
   from `https://polaris-works.github.io/wardrobe/`, and Caddy proxies the address from there (VER-9).
 - The manifest `id` is `/wardrobe/`, the new Pages path (VER-14). Chrome treats an install of the
