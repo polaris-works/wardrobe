@@ -19,7 +19,7 @@ The names of the screen are the English ones; `src/locales/es.js` is the source 
 | [07-wardrobe.md](07-wardrobe.md) | The palette, the garments, the outfits and their sections |
 | [08-account.md](08-account.md) | Google sign-in and the approval gate |
 | [09-sync.md](09-sync.md) | The garments as records on the server and their merge between devices |
-| [10-address.md](10-address.md) | The move of the garments from the old address to the new one |
+| [10-address.md](10-address.md) | The move to the new address, removed |
 
 ## Rule identifiers
 

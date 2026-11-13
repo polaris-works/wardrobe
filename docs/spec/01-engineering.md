@@ -5,7 +5,6 @@
 | Module | Responsibility | May import |
 |---|---|---|
 | `src/config.js` | The slug of the app, which `npm run init` rewrites, and the URL of the account server | nothing |
-| `src/move.js` | The old and the new address, the garments packed into a URL fragment, what the move button does (ADDR-1 to ADDR-5) | `storage`, `garments` |
 | `src/pocketbase.js` | The client of the account server: Google sign-in, refresh, the access row (ACC-3), the garment records: pull, push, stream (SYNC-4) | `config` |
 | `src/session.js` | The session on the device, the start route and the return from Google (ACC-1, ACC-4, ACC-5) | `storage` |
 | `src/version.js` | Version rules and the update offer rule | nothing |
@@ -41,7 +40,6 @@
 | `src/ui/fill.js` | The Fill tab: its season filter, its ranked rows and the tap that opens a filled garment | `fill`, `outfits`, `palette`, `families`, `ui/context`, `ui/outfit`, `ui/wardrobe` |
 | `src/ui/outfit.js` | The swatch, the image and the picture of a garment, the colour band, the strip, the colour fields, the looks, the season filter and the outfits of each combination, cached | `garments`, `palette`, `outfits`, `matching`, `ui/context`, `ui/controls` |
 | `src/ui/wardrobe.js` | The Wardrobe section, its rows, its detail, its sheet and the missing basics | `ds/sheet`, `garments`, `brands`, `links`, `palette`, `outfits`, `basics`, `measures`, `ui/context`, `ui/controls`, `ui/outfit` |
-| `src/ui/move.js` | The screen of the old address and its button, the import of moved garments on the new address (ADDR-1 to ADDR-8) | `move`, `session`, `storage`, `ui/context`, `ui/account`, `ui/onboarding` |
 | `src/ui/settings.js` | Settings, Delete all data (SET-3), the matching rules (SET-4), and the text of the page in its language | `garments`, `storage`, `i18n`, `modules`, `matching`, `families`, `ui/context`, `ui/update`, `ui/onboarding`, `ui/account`, `ui/combinations` |
 | `src/ui/dust.js` | The dust of a navigation item (optional) | `particles`, `ui/context`, `ui/controls` |
 | `src/ui/onboarding.js` | The walkthrough (optional) | `onboarding`, `sections`, `storage`, `ui/context`, `ui/controls` |
@@ -117,7 +115,6 @@ in [09-sync.md](09-sync.md).
 | `tests/matching.test.js` | LCh, the defaults of the matching rules, neutral colours, contrast, formality and colour type (PAL-6, MAT-1 to MAT-5) |
 | `tests/families.test.js` | The palette families: Wada, the generated sets, their targets and counts, the switch and the family in use (FAM-1 to FAM-5) |
 | `tests/fill.test.js` | The ranked list of the Fill tab: basics, set colours, drops, slot pick, order and cap, the colour type and the family (FIL-1 to FIL-9) |
-| `tests/move.test.js` | The old origin, the fragment of a move and its errors, the size limit, the move mode (ADDR-1 to ADDR-5) |
 | `tests/storage.test.js` | Load, save, the corrupt copy, the lost doc (SYNC-2), export, import and the device preferences |
 | `tests/pocketbase.test.js` | The client of the account server and its URL (ACC-3, ACC-4, ACC-6, SYNC-4) |
 | `tests/session.test.js` | The session, the start route, the pending sign-in and the return URL (ACC-1, ACC-4, ACC-5) |

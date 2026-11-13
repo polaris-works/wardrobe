@@ -75,5 +75,5 @@ with `fetch`, with no SDK. The garments of an approved account sync between its 
 
 - The server has a row in `apps`: slug `wardrobe`, url `https://attire.artisandevs.duckdns.org/`.
 - The Google OAuth client has the redirect URIs `https://attire.artisandevs.duckdns.org/`,
-  `https://polaris-works.github.io/pwa-wardrobe/` (the old address, until it is retired) and
+  `https://polaris-works.github.io/wardrobe/` and
   `http://localhost:8081/` (`npm run serve`).

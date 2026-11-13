@@ -11,7 +11,6 @@ const SHELL = [
   './manifest.webmanifest',
   './src/app.js',
   './src/config.js',
-  './src/move.js',
   './src/pocketbase.js',
   './src/session.js',
   './src/ui/context.js',
@@ -24,7 +23,6 @@ const SHELL = [
   './src/ui/fill.js',
   './src/ui/wardrobe.js',
   './src/ui/settings.js',
-  './src/ui/move.js',
   './src/ui/update.js',
   './src/ui/dust.js',
   './src/ui/onboarding.js',
@@ -116,8 +114,8 @@ self.addEventListener('install', (event) => {
   event.waitUntil(fill().then(() => self.skipWaiting()));
 });
 
-// SW-4: the old caches of this app only. The origin polaris-works.github.io holds the caches of every app
-// there, and each one keeps its own.
+// SW-4: the old caches of this app only. A shared origin holds the caches of every app there, and
+// each one keeps its own.
 const staleCaches = (keys) => keys.filter((key) => key.startsWith('wardrobe-') && ![CACHE, MANIFEST, IMAGES].includes(key));
 
 self.addEventListener('activate', (event) => {

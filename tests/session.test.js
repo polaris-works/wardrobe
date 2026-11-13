@@ -114,9 +114,9 @@ test('a pending sign-in that cannot be read is null', () => {
 });
 
 test('a return from Google gives the code and the state, and a URL without them (ACC-4)', () => {
-  const { oauth, clean } = readOAuthReturn(new URL('https://app.test/pwa-wardrobe/?a=1&code=C&state=S#top'));
+  const { oauth, clean } = readOAuthReturn(new URL('https://app.test/wardrobe/?a=1&code=C&state=S#top'));
   assert.deepEqual(oauth, { code: 'C', state: 'S' });
-  assert.equal(clean, '/pwa-wardrobe/?a=1#top');
+  assert.equal(clean, '/wardrobe/?a=1#top');
 });
 
 test('a cancel at Google returns error and state with no code', () => {

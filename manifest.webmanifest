@@ -3,7 +3,7 @@
   "short_name": "Attire",
   "description": "Load my clothes and generate outfits",
   "lang": "en",
-  "id": "/pwa-wardrobe/",
+  "id": "/wardrobe/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

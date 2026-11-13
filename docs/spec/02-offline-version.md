@@ -19,7 +19,7 @@ Rules of `sw.js`, `src/version.js`, `version.json`, `scripts/bump-version.mjs`,
   `wardrobe-shell-v9`; it went up for version 2 of the garments doc (GAR-5), then for design
   system 0.7.1 and 0.7.2, then for the release notes, then for versions 3 and 4 of the doc, then
   for the sync (09-sync.md), then for the move to the new address (10-address.md). A cache of another app of the origin, such as
-  `shopping-shell-v29` on `polaris-works.github.io`, stays.
+  `shopping-shell-v29`, stays.
 - **SW-5** The worker answers only `GET` requests of its own origin, and the images of other
   origins (SW-14). The proxy of the links (LNK-1) goes to the network.
 - **SW-6** A request is answered stale-while-revalidate: the cached copy at once, and a fresh copy
@@ -87,7 +87,7 @@ Rules of `sw.js`, `src/version.js`, `version.json`, `scripts/bump-version.mjs`,
 
 - **VER-9** The app is a static site: the repository root, served over HTTPS at
   `https://attire.artisandevs.duckdns.org/`. Caddy on pwa-server serves that address from the
-  GitHub Pages URL of the repository, `https://polaris-works.github.io/pwa-wardrobe/`, the old address (ADDR-1). A release tag `vX.Y.Z` is a deploy: its push runs
+  GitHub Pages URL of the repository, `https://polaris-works.github.io/wardrobe/`. A release tag `vX.Y.Z` is a deploy: its push runs
   `.github/workflows/pages.yml`, which publishes the tagged commit to GitHub Pages. A push to
   `main` deploys nothing. The Pages source of the repository is GitHub Actions, and its
   `github-pages` environment allows the tags `v*`.
@@ -148,7 +148,7 @@ Rules of `sw.js`, `src/version.js`, `version.json`, `scripts/bump-version.mjs`,
 
 - **VER-14** The manifest makes the app installable from Chrome: **Install app**, or the
   row **Install the app** of Settings (INS-2). It runs `standalone`, in any orientation, with
-  `start_url` and `scope` `./` and `id` `/pwa-wardrobe/`. The `id` resolves against the origin of
+  `start_url` and `scope` `./` and `id` `/wardrobe/`. The `id` resolves against the origin of
   `start_url`, so `./` would be the root of `polaris-works.github.io`, the same id as each other app
   there, and Chrome would offer no install.
 - **VER-15** The icons are `icons/icon-192.png`, `icon-512.png` and `icon-maskable-512.png`,
