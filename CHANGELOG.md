@@ -4,7 +4,10 @@ Technical changes, newest first. What a user sees of a version goes to `release-
 
 ## Unreleased
 
-No change.
+- The app moves to `https://attire.polarisworks.duckdns.org/` and calls the API at
+  `https://api.polarisworks.duckdns.org` (`PRODUCTION_API`, ACC-3, VER-9). pwa-server serves the
+  legacy `attire.artisandevs.duckdns.org` in parallel, with no redirect, and its migration 18 moves
+  `apps.url`.
 
 ## 0.2.1 - 2026-11-13
 

@@ -30,8 +30,11 @@ const fake = (...replies) => {
 
 test('apiUrl gives the local server on a local host and the production one elsewhere', () => {
   for (const host of ['localhost', '127.0.0.1', '[::1]']) assert.equal(apiUrl(host), LOCAL_API);
-  for (const host of ['attire.artisandevs.duckdns.org', 'polaris-works.github.io']) assert.equal(apiUrl(host), 'https://api.artisandevs.duckdns.org', host);
-  assert.equal(PRODUCTION_API, 'https://api.artisandevs.duckdns.org');
+  // The legacy host serves the same app until its retirement, and talks to the same API.
+  for (const host of ['attire.polarisworks.duckdns.org', 'attire.artisandevs.duckdns.org', 'polaris-works.github.io']) {
+    assert.equal(apiUrl(host), 'https://api.polarisworks.duckdns.org', host);
+  }
+  assert.equal(PRODUCTION_API, 'https://api.polarisworks.duckdns.org');
 });
 
 test('oauthStart appends the encoded redirect URL to the authURL of google', async () => {

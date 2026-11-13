@@ -1,7 +1,7 @@
 # The move to the new address
 
 Removed: the old address no longer serves the app, so the app has no screen of the old address and
-no import of moved garments. The address is `https://attire.artisandevs.duckdns.org/` (VER-9).
+no import of moved garments. The address is `https://attire.polarisworks.duckdns.org/` (VER-9).
 
 - **ADDR-1** Removed: the old address no longer serves the app.
 - **ADDR-2** Removed: the old address no longer serves the app.

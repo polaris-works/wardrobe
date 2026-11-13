@@ -4,7 +4,7 @@ What changes for you in each version of the app. The newest version is first.
 
 ## Unreleased
 
-No change.
+- Attire has a new address: `attire.polarisworks.duckdns.org`. Install the app from there and remove the old icon. With an account, your garments come back when you sign in. Without an account, move them with **Export** and **Import** in **Settings**.
 
 ## 0.2.0 - 2026-11-05
 

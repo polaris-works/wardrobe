@@ -4,7 +4,7 @@ Lo que cambia para ti en cada versión de la app. La versión más nueva va prim
 
 ## Unreleased
 
-No change.
+- Attire tiene una dirección nueva: `attire.polarisworks.duckdns.org`. Instala la app desde allí y quita el icono antiguo. Con una cuenta, tus prendas vuelven al iniciar sesión. Sin cuenta, pásalas con **Exportar** e **Importar** en **Ajustes**.
 
 ## 0.2.0 - 2026-11-05
 
